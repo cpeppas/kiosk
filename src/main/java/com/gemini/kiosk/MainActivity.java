@@ -1,12 +1,14 @@
 package com.gemini.kiosk;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -25,6 +27,11 @@ public class MainActivity extends Activity {
         getWindow().addFlags(windowFlags);
 
         setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
     }
 
 }
